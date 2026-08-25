@@ -8,12 +8,12 @@ dna_sequence = (
     "GCGTACCGATGCTAACGTTAGCTAGCGATCGATGCCGTTAGCATGAACTGCTAGCTAACCGATCGTAC"
 )
 
-=========================================================================================
-=========================================================================================
 # Converts the sequence to uppercase to ensure consistent processing.
 dna_sequence = dna_sequence.upper().replace('',"")
 
-# Defines a function that checks each base in the DNA sequence.
+############################################################
+# Function: DNA Sequence Validation 
+############################################################
 def validate_sequence(dna_sequence):
 # Check if the sequence is empty
     if dna_sequence == "":
@@ -24,8 +24,7 @@ def validate_sequence(dna_sequence):
     else:
 # If any character is not a valid nucleotide, the sequence is rejected.
         print("Invalid Sequence!")
-=========================================================================================
-=========================================================================================
+############################################################
 validate_sequence(dna_sequence)
 
 
