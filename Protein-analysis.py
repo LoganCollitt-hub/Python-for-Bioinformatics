@@ -1,6 +1,9 @@
 !pip install biopython
 from Bio.Seq import Seq
 ========================================================================================================================
+############################################################
+# Function: Amino acid count
+############################################################
 def count_amino_acids(protein_sequence):
     # Initializes a dictionary to store the count for each amino acid.
     aa_counts = {}
@@ -8,7 +11,9 @@ def count_amino_acids(protein_sequence):
         # If the amino acid already exists, increment its count; otherwise start at 1.
         aa_counts[aa] = aa_counts.get(aa, 0) + 1
     return aa_counts
-
+############################################################
+# Function: Most common Amino acid 
+############################################################
 # Defines a function that returns the amino acid with the highest count.
 def most_common_aa(aa_sorted):
     # Finds the highest count value in the dictionary.
@@ -17,6 +22,7 @@ def most_common_aa(aa_sorted):
     for aa in aa_sorted:
         if aa_sorted[aa] == highest_count:
             return aa, highest_count
+========================================================================================================================
 '''
 ========================================
              START OF PROGRAM
