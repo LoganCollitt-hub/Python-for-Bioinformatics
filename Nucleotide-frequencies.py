@@ -14,3 +14,7 @@ def nucleotide_percentage(dna_sequence):
     for nucleotide, count in freq.items():
        percentage = (count / total_length) * 100
        print(f"Nucleotide percentage of {nucleotide} is:{percentage:.2f}%")
+
+freq = nucleotide_frequency(dna_sequence)
+freq_string =','.join(f" {base}:{count}" for base, count in freq.items())
+print(f"Nucleotide frequencies:{freq_string}")
