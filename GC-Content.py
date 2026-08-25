@@ -1,3 +1,6 @@
+############################################################
+# Function: Calculate GC Content
+############################################################
 def calculate_gc_content (dna_sequence):
     freq = nucleotide_frequency(dna_sequence)
 # Retrieves the nucleotide counts and extracts the combined total of G and C bases.
