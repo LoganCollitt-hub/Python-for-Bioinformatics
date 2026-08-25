@@ -1,3 +1,6 @@
+############################################################
+# Function: Motif Search
+############################################################
 # Function to find DNA motif
 def find_motif(dna_sequence, motif):
 # Initializes an empty list to store the starting indices where the motif is found (zero-based).
@@ -17,15 +20,14 @@ def find_motif(dna_sequence, motif):
     longest = max(distances)
 
     return zero_based, one_based, distances, shortest, longest
-
+============================================================================================================
 # Defines a smotif to search for.
 motif = "ATG"
 zero_based, one_based, distances, shortest, longest = find_motif(dna_sequence,motif)
 
 print(f"Motif: {motif}")
 print(f"Count: {len(zero_based)}")
-============================================================================================================
-============================================================================================================
+
 # Converts each value into string format for printing.
 print(f"Zero based: {','.join(str(x) for x in zero_based)}")
 print(f"One based: {','.join(str(x) for x in one_based)}")
