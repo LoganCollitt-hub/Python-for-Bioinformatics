@@ -20,7 +20,7 @@ def find_motif(dna_sequence, motif):
     longest = max(distances)
 
     return zero_based, one_based, distances, shortest, longest
-============================================================================================================
+========================================================================================================================
 # Defines a smotif to search for.
 motif = "ATG"
 zero_based, one_based, distances, shortest, longest = find_motif(dna_sequence,motif)
