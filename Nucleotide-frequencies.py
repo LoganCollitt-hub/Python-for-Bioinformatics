@@ -18,3 +18,4 @@ def nucleotide_percentage(dna_sequence):
 freq = nucleotide_frequency(dna_sequence)
 freq_string =','.join(f" {base}:{count}" for base, count in freq.items())
 print(f"Nucleotide frequencies:{freq_string}")
+nucleotide_percentage(dna_sequence)
