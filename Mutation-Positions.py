@@ -8,7 +8,7 @@ i = 0
 current_sequence = ""
 longest_sequence = ""
 mutation_positions = []
-==============================================================================================================
+========================================================================================================================
 mutation_positions = find_mutation_positions(dna_sequence,'C')
 print("Possible mutation positions for 'C':", mutation_positions)
        
