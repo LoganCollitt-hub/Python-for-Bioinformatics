@@ -13,6 +13,6 @@ def get_reverse_complement(dna_sequence):
     reverse_complement_list = complement_list[::-1]
     reverse_complement = ''.join(reverse_complement_list)
     return reverse_complement
-############################################################
+========================================================================================================================
 complement = get_complement(dna_sequence)
 reverse_complement = get_reverse_complement(dna_sequence)
