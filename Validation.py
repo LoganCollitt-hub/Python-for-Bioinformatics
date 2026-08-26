@@ -8,7 +8,7 @@ def validate_sequence(dna_sequence):
         print("Valid Sequence!")
     else:
         print("Invalid Sequence!")
-############################################################
+========================================================================================================================
 validate_sequence(dna_sequence)
 
 
