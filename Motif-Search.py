@@ -14,14 +14,12 @@ def find_motif(dna_sequence, motif):
     longest = max(distances)
 
     return zero_based, one_based, distances, shortest, longest
-========================================================================================================================
+    
 motif = "ATG"
 zero_based, one_based, distances, shortest, longest = find_motif(dna_sequence,motif)
-
+========================================================================================================================
 print(f"Motif: {motif}")
 print(f"Count: {len(zero_based)}")
-
-# Converts each value into string format for printing.
 print(f"Zero based: {','.join(str(x) for x in zero_based)}")
 print(f"One based: {','.join(str(x) for x in one_based)}")
 print(f"Distances: {','.join(str(x) for x in distances)}")
